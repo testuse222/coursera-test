@@ -1,1 +1,82 @@
-//singthe simple responsive framework from Lecture 24 as starting point for the assignment
+* {
+	box-sizing: border-box;
+}
+h2{
+	text-align:center;
+	font-family: Helvetica;
+	font-weight: bold;
+	margin-bottom: 45px;
+}
+
+p {
+  border: 1px solid black;
+  width:20%;
+  height:30px;
+  float:right;
+  margin-top: 0px;  
+  margin-right: auto;
+  margin-left: auto;
+  text-align: center;
+  font-family: Helvetica;
+  font-weight: bold;
+
+}
+section {
+	clear:both;
+	margin: 10px;
+}
+
+.row {
+  width: 100%; 
+
+}
+.box {
+	background-color:#B8B8B8;
+	height:250px;
+	margin:10px;
+
+}
+#chicken {
+	background-color:#FFB3BF;
+	color:black;
+}
+#beef {
+	background-color:#FF6666;
+	color:black;
+}
+#sushi {
+	background-color:#FFEE99;
+	color:black;
+}
+
+
+
+@media (min-width: 992px){
+	.col-lg-4 {
+    float: left;
+    border: 1px solid black;
+    width: 31%;
+  }  
+ 
+
+}
+@media (min-width:768px) and (max-width: 991px){
+  .col-md-6, .col-md-12 {
+    float: left;
+    border: 1px solid black;    
+  }  
+  .col-md-6 {
+    width: 47.2%;
+  }
+  .col-md-12 {
+    width: 97%;
+  }
+
+}
+@media (max-width: 767px){
+	.col-sm-12 {
+    float: left;
+    border: 1px solid black; 
+    width: 97.5%;   
+  }  
+ }
